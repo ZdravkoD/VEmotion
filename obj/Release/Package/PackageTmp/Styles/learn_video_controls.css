@@ -1,0 +1,81 @@
+#video-progress-bar, #video-progress {
+    margin-bottom: 0.5%;
+    height: 20px;
+}
+#video-progress-bar, #button-fullscreen {
+    margin-left: 2%;
+}
+
+.video__control_buttons, #currentVideoTime {
+    bottom: 3%;
+}
+
+#video-progress-bar	{
+    cursor: pointer;
+    margin-right: 2%;
+    /* margin-left + margin-right */
+    width:96%;
+    overflow: hidden;
+    position: fixed;
+    bottom:0;
+}
+
+#video-progress-filling {
+    height: 4px;
+    width: 100%;
+    margin-top:8px;
+    background-color: #ff4081;
+    overflow: hidden;
+    position: relative;
+}
+
+#video-progress {
+    position:fixed;
+    width: 20px;
+    -webkit-border-radius: 20px;
+    -moz-border-radius: 20px;
+    border-radius: 20px;
+    background-color: #ff4081;
+    bottom:0;
+}
+
+.video__control_buttons {
+    position: fixed;
+    width: 8%;
+    z-index: 0;
+    border:none;
+    border-radius: 10px;
+    background-color: #00000000;
+    outline:none;
+}    
+
+.video__control_button_image {
+    z-index: 1;
+}
+
+
+#currentVideoTime {
+    position:fixed;
+    background-color: #D3D3D37E;
+    font-size:40;
+    font-weight:bold;
+    text-align:center;
+    right:2%;
+    height:48px;
+    line-height:48px;
+    width: 12%;
+}
+
+#button-fullscreen {
+    width: 5%;
+}
+
+#button-rew {
+    left: 38%;
+}
+#button-play {
+    left: 46%;
+}
+#button-ff {
+    left: 54%;
+}

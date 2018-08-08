@@ -1,0 +1,67 @@
+﻿<link rel="stylesheet" href="Styles/learn.css?123" />
+<link rel="stylesheet" href="Styles/learn_video_controls.css?123" />
+
+
+<button id="learn-back-to-main-menu">BACK</button> 
+
+<div id="videoContainer">
+    <video id="mainVid" poster="Images/loading.gif">
+        <source src="Videos/Sample1.mp4" type="video/mp4" />
+    </video>
+</div>
+<div class="emotionsContainer">
+    <div id="div-emotion-1" class="divEmotion">
+        <div class="imgEmotionLight" id="emotion-anger-light">&nbsp;</div>
+        <img src="Images/anger.png" class="imgEmotion" id="emotion-anger" />
+    </div>
+
+    <div id="div-emotion-2" class="divEmotion">
+        <div class="imgEmotionLight" id="emotion-disgust-light"></div>
+        <img src="Images/disgust.png" class="imgEmotion" id="emotion-disgust" />
+    </div>
+
+    <div id="div-emotion-3" class="divEmotion">
+        <div class="imgEmotionLight" id="emotion-fear-light"></div>
+        <img src="Images/fear.png" class="imgEmotion" id="emotion-fear" />
+    </div>
+
+    <div id="div-emotion-4" class="divEmotion">
+        <div class="imgEmotionLight" id="emotion-joy-light"></div>
+        <img src="Images/joy.png" class="imgEmotion" id="emotion-joy" />
+    </div>
+
+    <div id="div-emotion-5" class="divEmotion">
+        <div class="imgEmotionLight" id="emotion-neutral-light"></div>
+        <img src="Images/neutral.png" class="imgEmotion" id="emotion-neutral" />
+    </div>
+
+    <div id="div-emotion-6" class="divEmotion">
+        <div class="imgEmotionLight" id="emotion-sad-light"></div>
+        <img src="Images/sad.png" class="imgEmotion" id="emotion-sad" />
+    </div>
+
+    <div id="div-emotion-7" class="divEmotion">
+        <div class="imgEmotionLight" id="emotion-surprise-light"></div>
+        <img src="Images/surprise.png" class="imgEmotion" id="emotion-surprise" />
+    </div>
+</div>
+<div class="video__control">
+    <div id="video-progress-bar">
+        <div id="video-progress-filling">&nbsp;</div>
+        <span id="video-progress"></span>
+    </div>
+
+    <button id="button-fullscreen" class="video__control_buttons"> <img id="image-fullscreen" src="Images/ic_media_fullscreen.png" class="video__control_button_image" /> </button>
+
+    <button id="button-ff" class="video__control_buttons"> <img id="image-ff" src="Images/ic_media_ff.png" class="video__control_button_image" /> </button>
+    <button id="button-play" class="video__control_buttons"> <img id="image-play" src="Images/ic_media_play.png" class="video__control_button_image" /> </button>
+    <button id="button-rew" class="video__control_buttons"> <img id="image-rew" src="Images/ic_media_rew.png" class="video__control_button_image" /> </button>
+
+    <div id="currentVideoTime">--:-- / --:--</div>
+</div>
+
+
+<script>
+    var url = "Scripts/My/Learn.js";
+    $.getScript(url);
+</script>
