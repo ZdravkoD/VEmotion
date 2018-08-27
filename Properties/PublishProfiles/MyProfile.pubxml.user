@@ -49,7 +49,10 @@ by editing this MSBuild file. In order to learn more about this please visit htt
       <publishTime>06/18/2015 21:19:46</publishTime>
     </File>
     <File Include="bin/WebApplication1.dll">
-      <publishTime>07/31/2018 23:54:17</publishTime>
+      <publishTime>08/28/2018 00:02:24</publishTime>
+    </File>
+    <File Include="Gallery.html">
+      <publishTime>08/28/2018 00:00:52</publishTime>
     </File>
     <File Include="HtmlPage1.html">
       <publishTime>06/28/2018 22:51:14</publishTime>
@@ -65,6 +68,12 @@ by editing this MSBuild file. In order to learn more about this please visit htt
     </File>
     <File Include="Images/fear.png">
       <publishTime>04/06/2018 21:07:44</publishTime>
+    </File>
+    <File Include="Images/ic_button_back.png">
+      <publishTime>08/08/2018 08:52:37</publishTime>
+    </File>
+    <File Include="Images/ic_gallery.png">
+      <publishTime>08/08/2018 08:07:08</publishTime>
     </File>
     <File Include="Images/ic_media_ff.png">
       <publishTime>06/28/2018 20:17:38</publishTime>
@@ -99,20 +108,26 @@ by editing this MSBuild file. In order to learn more about this please visit htt
     <File Include="Images/surprise.png">
       <publishTime>04/06/2018 21:08:25</publishTime>
     </File>
+    <File Include="Images/thumbnail-he-joy-anticipation_tablet.png">
+      <publishTime>08/27/2018 22:46:33</publishTime>
+    </File>
+    <File Include="Images/thumbnail-he-joy-laughing.png">
+      <publishTime>08/27/2018 22:45:45</publishTime>
+    </File>
     <File Include="index.html">
-      <publishTime>07/31/2018 23:48:24</publishTime>
+      <publishTime>08/28/2018 00:18:54</publishTime>
     </File>
     <File Include="Learn.html">
-      <publishTime>07/31/2018 23:55:18</publishTime>
+      <publishTime>08/28/2018 00:17:34</publishTime>
     </File>
     <File Include="MainMenu.html">
-      <publishTime>06/30/2018 11:20:31</publishTime>
+      <publishTime>05/08/2018 08:59:50</publishTime>
     </File>
     <File Include="packages.config">
       <publishTime>06/27/2018 21:05:16</publishTime>
     </File>
     <File Include="Play.html">
-      <publishTime>07/31/2018 23:55:13</publishTime>
+      <publishTime>08/27/2018 23:25:13</publishTime>
     </File>
     <File Include="Scripts/jquery-3.3.1.js">
       <publishTime>06/27/2018 20:46:17</publishTime>
@@ -144,32 +159,44 @@ by editing this MSBuild file. In order to learn more about this please visit htt
     <File Include="Scripts/jquery.color.svg-names-2.1.2.min.js">
       <publishTime>06/27/2018 21:05:16</publishTime>
     </File>
+    <File Include="Scripts/My/Gallery.js">
+      <publishTime>08/27/2018 23:55:27</publishTime>
+    </File>
     <File Include="Scripts/My/index.js">
-      <publishTime>07/31/2018 22:49:31</publishTime>
+      <publishTime>08/27/2018 19:37:45</publishTime>
     </File>
     <File Include="Scripts/My/JavaScript.js">
       <publishTime>06/28/2018 22:37:52</publishTime>
     </File>
     <File Include="Scripts/My/Learn.js">
-      <publishTime>07/31/2018 22:58:11</publishTime>
+      <publishTime>08/28/2018 00:12:23</publishTime>
     </File>
     <File Include="Scripts/My/MainMenu.js">
-      <publishTime>01/01/0001 00:00:00</publishTime>
+      <publishTime>08/27/2018 23:28:12</publishTime>
     </File>
     <File Include="Scripts/My/Play.js">
-      <publishTime>07/31/2018 22:25:31</publishTime>
+      <publishTime>08/27/2018 23:22:24</publishTime>
     </File>
     <File Include="Scripts/My/PleaseRotate.js">
       <publishTime>06/28/2018 22:13:36</publishTime>
+    </File>
+    <File Include="Scripts/My/Utils.js">
+      <publishTime>08/28/2018 00:03:44</publishTime>
+    </File>
+    <File Include="Styles/common.css">
+      <publishTime>08/27/2018 19:43:15</publishTime>
+    </File>
+    <File Include="Styles/gallery.css">
+      <publishTime>08/27/2018 23:06:24</publishTime>
     </File>
     <File Include="Styles/index.css">
       <publishTime>06/29/2018 22:52:22</publishTime>
     </File>
     <File Include="Styles/learn.css">
-      <publishTime>06/30/2018 01:24:09</publishTime>
+      <publishTime>08/08/2018 09:07:46</publishTime>
     </File>
     <File Include="Styles/learn_video_controls.css">
-      <publishTime>06/30/2018 00:50:57</publishTime>
+      <publishTime>08/28/2018 00:48:51</publishTime>
     </File>
     <File Include="Styles/main_menu.css">
       <publishTime>06/30/2018 00:41:37</publishTime>
@@ -180,8 +207,17 @@ by editing this MSBuild file. In order to learn more about this please visit htt
     <File Include="Styles/video_controls.css">
       <publishTime>06/28/2018 22:53:06</publishTime>
     </File>
+    <File Include="Videos/he-joy-anticipation_tablet.mp4">
+      <publishTime>08/27/2018 22:20:42</publishTime>
+    </File>
+    <File Include="Videos/he-joy-laughing.mp4">
+      <publishTime>08/27/2018 22:20:51</publishTime>
+    </File>
     <File Include="Videos/Sample1.mp4">
       <publishTime>06/28/2018 12:49:50</publishTime>
+    </File>
+    <File Include="Videos/videos-metadata.json">
+      <publishTime>08/28/2018 00:50:25</publishTime>
     </File>
     <File Include="Web.config">
       <publishTime>06/28/2018 11:23:38</publishTime>

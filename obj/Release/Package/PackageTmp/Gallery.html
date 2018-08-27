@@ -1,0 +1,58 @@
+﻿<link rel="stylesheet" href="Styles/gallery.css?12" />
+<link rel="stylesheet" href="Styles/common.css?123" />
+
+<button id="gallery-back" class="hover_button"> <img id="image-button-back" src="Images/ic_button_back.png" class="button_image" draggable="false" /> </button>
+
+<div id="videoGallery">
+</div>
+
+<script>
+
+    function Gallery_refreshHoveringEffect() {
+        var hoverButtons = document.getElementsByClassName('hover_button');
+        Array.prototype.forEach.call(hoverButtons, function (el) {
+            if (isMobile()) {
+                el.onmousedown = function () {
+                    this.style.backgroundColor = '#D3D3D37A';
+                };
+                el.onmouseup = function () {
+                    this.style.backgroundColor = '#ff000000';
+                };
+            } else {
+                el.onmouseover = function () {
+                    this.style.backgroundColor = '#D3D3D37A';
+                };
+                el.onmouseout = function () {
+                    this.style.backgroundColor = '#ff000000';
+                };
+            }
+        });
+    }
+
+    const gallery = document.getElementById("videoGallery");
+
+    $.getJSON('Videos/videos-metadata.json?123', function (actual_JSON) {
+        // Parse JSON string into object
+        //var actual_JSON = JSON.parse(response);
+        console.log('JSON content: ' + actual_JSON);
+
+        const videos = actual_JSON['videos'];
+        Object.keys(videos).forEach(function (videoKey) {
+            gallery.innerHTML += '<button class="hover_button gallery-thumbnail-button"> <img id="' + videos[videoKey]['video'] + '" class="button_image" src="' + videos[videoKey]['thumbnail'] + '" draggable="false" /> </button>';
+        });
+
+        $('.gallery-thumbnail-button').click(function () {
+            console.log('Playing ' + this.childNodes[1].id);
+            $('#gallery-back').click();
+            Learn_setVideo(this.childNodes[1].id);
+        });
+
+
+        Gallery_refreshHoveringEffect();
+    });
+
+</script>
+
+<script>
+    $.getScript("Scripts/My/Gallery.js?123");
+</script>

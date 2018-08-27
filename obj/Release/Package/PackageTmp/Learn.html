@@ -1,15 +1,18 @@
-﻿<link rel="stylesheet" href="Styles/learn.css?123" />
-<link rel="stylesheet" href="Styles/learn_video_controls.css?123" />
+﻿<link rel="stylesheet" href="Styles/learn.css?234" />
+<link rel="stylesheet" href="Styles/learn_video_controls.css?1234" />
+<link rel="stylesheet" href="Styles/common.css?123" />
 
 
-<button id="learn-back-to-main-menu">BACK</button> 
+<div id="top_controls">
+    <button id="learn-back-to-main-menu" class="hover_button"> <img id="image-button-back" src="Images/ic_button_back.png" class="button_image" draggable="false"/> </button>
+</div>
 
 <div id="videoContainer">
-    <video id="mainVid" poster="Images/loading.gif">
-        <source src="Videos/Sample1.mp4" type="video/mp4" />
+    <video id="mainVid" poster="Images/loading.gif" muted>
+        <source src="Videos/Sample1.mp4" type="video/mp4"/>
     </video>
 </div>
-<div class="emotionsContainer">
+<div class="emotionsContainer" draggable="false" >
     <div id="div-emotion-1" class="divEmotion">
         <div class="imgEmotionLight" id="emotion-anger-light">&nbsp;</div>
         <img src="Images/anger.png" class="imgEmotion" id="emotion-anger" />
@@ -51,17 +54,14 @@
         <span id="video-progress"></span>
     </div>
 
-    <button id="button-fullscreen" class="video__control_buttons"> <img id="image-fullscreen" src="Images/ic_media_fullscreen.png" class="video__control_button_image" /> </button>
-
-    <button id="button-ff" class="video__control_buttons"> <img id="image-ff" src="Images/ic_media_ff.png" class="video__control_button_image" /> </button>
-    <button id="button-play" class="video__control_buttons"> <img id="image-play" src="Images/ic_media_play.png" class="video__control_button_image" /> </button>
-    <button id="button-rew" class="video__control_buttons"> <img id="image-rew" src="Images/ic_media_rew.png" class="video__control_button_image" /> </button>
+    <button id="button-fullscreen" class="video__control_buttons hover_button"> <img id="image-fullscreen" src="Images/ic_media_fullscreen.png" class="button_image" draggable="false" /> </button>
+    <button id="button-gallery" class="hover_button"> <img id="image-gallery" src="Images/ic_gallery.png" class="button_image" draggable="false" /> </button>
 
     <div id="currentVideoTime">--:-- / --:--</div>
 </div>
 
 
 <script>
-    var url = "Scripts/My/Learn.js";
+    var url = "Scripts/My/Learn.js?123";
     $.getScript(url);
 </script>

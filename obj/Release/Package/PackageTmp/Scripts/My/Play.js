@@ -1,11 +1,8 @@
-﻿var Play_video;
+﻿var Play_video = document.querySelector('#mainVid');;
 
 
-function setInteractionCallbacks() {
+function Play_setInteractionCallbacks() {
     $('#play-back-to-main-menu').click(function () {
-        const divMainMenu = document.querySelector('#main-menu');
-        const divLearn = document.querySelector('#play');
-
         divMainMenu.style.display = 'inline';
         divLearn.style.display = 'none';
 
@@ -15,16 +12,11 @@ function setInteractionCallbacks() {
     });
 }
 
-function initReferences() {
-    Play_video = document.querySelector('#mainVid');
-}
-
 /* Learn JS main function */
 function showPlayJS() {
     console.log('showPlayJS()');
 
-    initReferences();
-    setInteractionCallbacks();
+    Play_setInteractionCallbacks();
 
     //Play_video.play();
 }

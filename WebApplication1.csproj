@@ -66,6 +66,7 @@
     <Reference Include="System.EnterpriseServices" />
   </ItemGroup>
   <ItemGroup>
+    <Content Include="Gallery.html" />
     <Content Include="Images\anger.png" />
     <Content Include="Images\disgust.png" />
     <Content Include="Images\favicon.ico" />
@@ -84,6 +85,8 @@
     <Content Include="Images\sad.png" />
     <Content Include="Images\surprise.png" />
     <None Include="manifest.json" />
+    <Content Include="Images\thumbnail-he-joy-anticipation_tablet.png" />
+    <Content Include="Images\thumbnail-he-joy-laughing.png" />
     <Content Include="index.html" />
     <Content Include="Play.html" />
     <Content Include="MainMenu.html" />
@@ -91,6 +94,10 @@
     <Content Include="Scripts\jquery-3.3.1.slim.min.map" />
     <Content Include="Scripts\jquery-3.3.1.min.map" />
     <None Include="Properties\PublishProfiles\MyProfile.pubxml" />
+    <Content Include="Scripts\My\Utils.js" />
+    <Content Include="Videos\he-joy-anticipation_tablet.mp4" />
+    <Content Include="Videos\he-joy-laughing.mp4" />
+    <Content Include="Videos\videos-metadata.json" />
     <None Include="Web.Debug.config">
       <DependentUpon>Web.config</DependentUpon>
     </None>
@@ -109,11 +116,14 @@
     <Content Include="Scripts\jquery.color-2.1.2.min.js" />
     <Content Include="Scripts\jquery.color.svg-names-2.1.2.js" />
     <Content Include="Scripts\jquery.color.svg-names-2.1.2.min.js" />
+    <Content Include="Scripts\My\Gallery.js" />
     <Content Include="Scripts\My\index.js" />
     <Content Include="Scripts\My\Play.js" />
     <Content Include="Scripts\My\Learn.js" />
     <Content Include="Scripts\My\MainMenu.js" />
     <Content Include="Scripts\My\PleaseRotate.js" />
+    <Content Include="Styles\common.css" />
+    <Content Include="Styles\gallery.css" />
     <Content Include="Styles\index.css" />
     <Content Include="Styles\learn.css" />
     <Content Include="Styles\learn_video_controls.css" />

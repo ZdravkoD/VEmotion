@@ -8,15 +8,7 @@ var Learn_progressStyle = window.getComputedStyle(Learn_progress, null);
 var Learn_progressFilled = document.querySelector('#video-progress');
 var Learn_video = document.querySelector('#mainVid');
 var Learn_divCurrentVideoTime = document.querySelector('#currentVideoTime');
-//var Learn_imagePlay = document.querySelector('#image-play');
 
-
-function isMobile() {
-    if (/Android|webOS|iPhone|iPad|iPod|BlackBerry|IEMobile|Opera Mini/i.test(navigator.userAgent)) {
-        return true;
-    }
-    return false;
-}
 
 function Learn_animateImg(imgLight) {
     const ANIM_LIGHT_DURATION = 125;
@@ -141,7 +133,7 @@ function Learn_setInteractionCallbacksLearn() {
     });
 
 
-    var greenLights = document.getElementsByClassName('video__control_buttons');
+    var greenLights = document.getElementsByClassName('hover_button');
     Array.prototype.forEach.call(greenLights, function (el) {
         if (isMobile()) {
             el.onmousedown = function () {
@@ -160,62 +152,31 @@ function Learn_setInteractionCallbacksLearn() {
         }
     });
 
-    var button_gallery = document.getElementById('button-gallery');
-    if (isMobile()) {
-        button_gallery.onmousedown = function () {
-            this.style.backgroundColor = '#D3D3D37A';
-        };
-        button_gallery.onmouseup = function () {
-            this.style.backgroundColor = '#ff000000';
-        };
-    } else {
-        button_gallery.onmouseover = function () {
-            this.style.backgroundColor = '#D3D3D37A';
-        };
-        button_gallery.onmouseout = function () {
-            this.style.backgroundColor = '#ff000000';
-        };
-    }
-
 
     $('#button-fullscreen').click(function () {
         Learn_toggleFullScreen();
         });
 
-    //$('#button-ff').click(function () {
-    //    console.log('ff');
-    //    this.blur();
-    //});
-    //$('#button-play').click(function () {
-    //    if (Learn_video.paused) {
-    //        Learn_video.play();
-    //        Learn_imagePlay.src = "Images/ic_media_pause.png";
-    //    } else {
-    //        Learn_video.pause();
-    //        Learn_imagePlay.src = "Images/ic_media_play.png";
-    //    }
-    //    this.blur();
-    //});
-    //$('#button-rew').click(function () {
-    //    console.log('rew');
-    //    this.blur();
-    //});
-
-    ///$('#mainVid').on('ended', function () {
-    //    Learn_imagePlay.src = "Images/ic_media_play.png";
-    //});
-
 
     $('#learn-back-to-main-menu').click(function () {
-        const divMainMenu = document.querySelector('#main-menu');
-        const divLearn = document.querySelector('#learn');
-
         divMainMenu.style.display = 'inline';
         divLearn.style.display = 'none';
 
         Learn_video.pause();
 
         console.log("Button Back From Learn To Main Menu clicked!");
+    });
+
+
+    $('#button-gallery').click(function () {
+        divGallery.style.display = 'inline';
+        divLearn.style.display = 'none';
+
+        Learn_video.pause();
+
+        showGalleryJS(divLearn);
+
+        console.log("Button Gallery clicked!");
     });
 
     console.log("Learn_setInteractionCallbacksLearn() end");
@@ -252,9 +213,22 @@ function Learn_setVideoControls() {
 }
 
 function Learn_onResize() {
-    console.log('Learn_onResize');
+    if (divLearn.style.display == 'inline') {
+        console.log('Learn_onResize');
 
-    Learn_setGreenLights();
+        Learn_setGreenLights();
+    }
+}
+
+function Learn_setFullscreen() {
+    var doc = window.document;
+    var docEl = doc.documentElement;
+
+    var requestFullScreen = docEl.requestFullscreen || docEl.mozRequestFullScreen || docEl.webkitRequestFullScreen || docEl.msRequestFullscreen;
+
+    if (!doc.fullscreenElement && !doc.mozFullScreenElement && !doc.webkitFullscreenElement && !doc.msFullscreenElement) {
+        requestFullScreen.call(docEl);
+    }
 }
 
 function Learn_toggleFullScreen() {
@@ -272,6 +246,11 @@ function Learn_toggleFullScreen() {
     }
 }
 
+function Learn_setVideo(video) {
+    console.log("Learn: "+video);
+    Learn_video.src=video;
+    Learn_video.play();
+}
 
 /* Learn JS main function */
 function Learn_show() {
@@ -285,6 +264,8 @@ function Learn_show() {
     Learn_setInteractionCallbacksLearn();
 
     window.onresize = Learn_onResize;
+
+    Learn_setFullscreen();
 
     Learn_video.play();
 }

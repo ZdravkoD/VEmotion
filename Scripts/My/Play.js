@@ -3,9 +3,6 @@
 
 function Play_setInteractionCallbacks() {
     $('#play-back-to-main-menu').click(function () {
-        const divMainMenu = document.querySelector('#main-menu');
-        const divLearn = document.querySelector('#play');
-
         divMainMenu.style.display = 'inline';
         divLearn.style.display = 'none';
 

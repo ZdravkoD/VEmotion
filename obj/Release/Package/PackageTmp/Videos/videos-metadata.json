@@ -1,0 +1,22 @@
+{
+  "videos": [
+    {
+      "thumbnail": "Images/thumbnail-he-joy-anticipation_tablet.png",
+      "video": "Videos/he-joy-anticipation_tablet.mp4",
+      "emotions": [
+        {
+          "joy": [ 2.0 ]
+        }
+      ]
+    },
+    {
+      "thumbnail": "Images/thumbnail-he-joy-laughing.png",
+      "video": "Videos/he-joy-laughing.mp4",
+      "emotions": [
+        {
+          "anger": [ 3.0 ]
+        }
+      ]
+    }
+  ]
+}

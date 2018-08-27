@@ -12,10 +12,10 @@
     $('#main-menu-button-play').click(function () {
         console.log("Button PLAY clicked!");
 
-        divMainMenu.style.display = 'none';
-        divPlay.style.display = 'inline';
+        //divMainMenu.style.display = 'none';
+        //divPlay.style.display = 'inline';
 
-        showPlayJS();
+        //showPlayJS();
         console.log("Showing play screen");
     });
 });

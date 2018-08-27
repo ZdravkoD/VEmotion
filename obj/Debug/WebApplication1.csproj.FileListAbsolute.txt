@@ -17,4 +17,3 @@ D:\MyDocuments\NBU\Duridanov\Web\ASP.NET\WebApplication1\WebApplication1\bin\Mic
 D:\MyDocuments\NBU\Duridanov\Web\ASP.NET\WebApplication1\WebApplication1\bin\Microsoft.CodeDom.Providers.DotNetCompilerPlatform.xml
 D:\MyDocuments\NBU\Duridanov\Web\ASP.NET\WebApplication1\WebApplication1\obj\Debug\WebApplication1.dll
 D:\MyDocuments\NBU\Duridanov\Web\ASP.NET\WebApplication1\WebApplication1\obj\Debug\WebApplication1.pdb
-D:\MyDocuments\NBU\Duridanov\Web\ASP.NET\WebApplication1\WebApplication1\obj\Debug\WebApplication1.csprojResolveAssemblyReference.cache

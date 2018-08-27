@@ -43,15 +43,15 @@
     position: fixed;
     width: 8%;
     z-index: 0;
-    border:none;
-    border-radius: 10px;
-    background-color: #00000000;
-    outline:none;
-}    
-
-.video__control_button_image {
-    z-index: 1;
 }
+
+#button-gallery {
+    position: fixed;
+    width: 5%;
+    z-index: 0;
+    margin-left: 7%;
+    bottom: 3%;
+}    
 
 
 #currentVideoTime {
@@ -70,12 +70,7 @@
     width: 5%;
 }
 
-/*#button-rew {
-    left: 38%;
+#learn-back-to-main-menu {
+    position:fixed;
+    width: 4%;
 }
-#button-play {
-    left: 46%;
-}
-#button-ff {
-    left: 54%;
-}*/
